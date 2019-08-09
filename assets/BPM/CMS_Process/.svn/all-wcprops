@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process
+END
+Support_Process.process
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/Support_Process.process
+END
+Support_Process.config
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/Support_Process.config
+END
+RegisterContract_Process.process
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/RegisterContract_Process.process
+END
+CMS_Process.config
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/CMS_Process.config
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/build.xml
+END
+ContractActivation_Process.config
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/ContractActivation_Process.config
+END
+ContractActivation_Process.process
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/ContractActivation_Process.process
+END
+CMS_Process.process
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/CMS_Process.process
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/.project
+END
+RegisterContract_Process.config
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/hqpgcsindia/!svn/ver/5796/ContractLifeCycleManagementSystem/trunk/codebase/bpm-artifacts/ContractManagementSystemBPM/CMS_Process/RegisterContract_Process.config
+END

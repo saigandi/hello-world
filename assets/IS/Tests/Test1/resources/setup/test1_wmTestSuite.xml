@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="MyTestSuite">
+    <webMethodsTestCase description="This test case was created automatically using a wrapper" name="test1:topService">
+        <service folder="test1" name="topService">
+            <input>
+                <file filename="C:/Program Files (x86)/Jenkins/workspace/B2B/deploy-assets/Assets/IS/Test/Test1/test/resources/data/test1_topService/in_19071912531904468.xml"/>
+            </input>
+            <expected>
+                <file filename="C:/Program Files (x86)/Jenkins/workspace/B2B/deploy-assets/Assets/IS/Test/Test1/test/resources/data/test1_topService/out_19071912531904468.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="MyTestSuite">
+    <webMethodsTestCase description="This test case was created automatically using a wrapper" name="test2:subService">
+        <service folder="test2" name="subService">
+            <input>
+                <file filename="C:\SoftwareAG101\IntegrationServer\instances\default\packages\Test2\resources\test\data\test2_subService\in_19072215342239845.xml"/>
+            </input>
+            <expected>
+                <file filename="C:\SoftwareAG101\IntegrationServer\instances\default\packages\Test2\resources\test\data\test2_subService\out_19072215342239845.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>

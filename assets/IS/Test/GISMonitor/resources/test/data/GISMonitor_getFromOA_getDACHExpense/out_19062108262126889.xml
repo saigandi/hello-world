@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <array name="Envelope" type="record" depth="1">
+      <record javaclass="com.wm.data.BasicData">
+        <value name="advance">0.00</value>
+        <value name="totreimburse">153.000</value>
+        <value name="number">403096</value>
+        <value name="status">A</value>
+        <value name="userid">12067</value>
+        <record name="date" javaclass="com.wm.data.BasicData">
+          <record name="Date" javaclass="com.wm.data.BasicData">
+            <value name="year">2018</value>
+            <value name="month">02</value>
+            <value name="day">15</value>
+            <value name="hour"></value>
+            <value name="minute"></value>
+            <value name="second"></value>
+            <value name="timezone"></value>
+          </record>
+        </record>
+        <value name="attachmentid"></value>
+        <value name="currency">EUR</value>
+        <value name="tottickets">4.00</value>
+        <value name="trip_reason"></value>
+        <record name="date_start" javaclass="com.wm.data.BasicData">
+          <record name="Date" javaclass="com.wm.data.BasicData">
+            <value name="year">0000</value>
+            <value name="month">00</value>
+            <value name="day">00</value>
+            <value name="hour"></value>
+            <value name="minute"></value>
+            <value name="second"></value>
+            <value name="timezone"></value>
+          </record>
+        </record>
+        <value name="approver"></value>
+        <record name="updated" javaclass="com.wm.data.BasicData">
+          <record name="Date" javaclass="com.wm.data.BasicData">
+            <value name="year">2018</value>
+            <value name="month">10</value>
+            <value name="day">10</value>
+            <value name="hour">04</value>
+            <value name="minute">53</value>
+            <value name="second">35</value>
+            <value name="timezone"></value>
+          </record>
+        </record>
+        <value name="id">417002</value>
+        <value name="thin_client_id"></value>
+        <record name="date_end" javaclass="com.wm.data.BasicData">
+          <record name="Date" javaclass="com.wm.data.BasicData">
+            <value name="year">0000</value>
+            <value name="month">00</value>
+            <value name="day">00</value>
+            <value name="hour"></value>
+            <value name="minute"></value>
+            <value name="second"></value>
+            <value name="timezone"></value>
+          </record>
+        </record>
+        <value name="name">TEST DEV3</value>
+        <record name="submitted" javaclass="com.wm.data.BasicData">
+          <record name="Date" javaclass="com.wm.data.BasicData">
+            <value name="year">2018</value>
+            <value name="month">02</value>
+            <value name="day">15</value>
+            <value name="hour"></value>
+            <value name="minute"></value>
+            <value name="second"></value>
+            <value name="timezone"></value>
+          </record>
+        </record>
+        <record name="acct_date" javaclass="com.wm.data.BasicData">
+          <record name="Date" javaclass="com.wm.data.BasicData">
+            <value name="year">2017</value>
+            <value name="month">04</value>
+            <value name="day">30</value>
+            <value name="hour"></value>
+            <value name="minute"></value>
+            <value name="second"></value>
+            <value name="timezone"></value>
+          </record>
+        </record>
+        <value name="externalid"></value>
+        <value name="tax_locationid"></value>
+        <value name="total">400.500</value>
+        <record name="created" javaclass="com.wm.data.BasicData">
+          <record name="Date" javaclass="com.wm.data.BasicData">
+            <value name="year">2018</value>
+            <value name="month">02</value>
+            <value name="day">15</value>
+            <value name="hour">05</value>
+            <value name="minute">50</value>
+            <value name="second">20</value>
+            <value name="timezone"></value>
+          </record>
+        </record>
+        <value name="balance">153.000</value>
+        <record name="approved" javaclass="com.wm.data.BasicData">
+          <record name="Date" javaclass="com.wm.data.BasicData">
+            <value name="year">2018</value>
+            <value name="month">02</value>
+            <value name="day">15</value>
+            <value name="hour"></value>
+            <value name="minute"></value>
+            <value name="second"></value>
+            <value name="timezone"></value>
+          </record>
+        </record>
+        <value name="notes">Anreise am Vorabend, da Termin bereits morgens um 8.30 beginnt. Übernachtung in Augsburg, da Hoteverfügbarkeit in München gering war, daher auch de rrelativ hohe Hotelpreis in Augsburg.</value>
+        <value name="currency_exchange_intolerance"></value>
+        <value name="is_overlapping"></value>
+        <value name="CrossChargeTo__c"></value>
+        <value name="SAPAccDocNum__c"></value>
+        <value name="SAP_IC_Charge_Num__c"></value>
+        <value name="Non_Perdiem_Trip__c"></value>
+        <value name="Location__c">München</value>
+        <value name="CountryCode__c">DE - Deutschland</value>
+        <value name="RegionCode__c">DE - ALL</value>
+        <value name="TripStartDate__c">2018-02-15</value>
+        <value name="TripStartTime__c">17:30</value>
+        <value name="TripEndDate__c">2018-02-16</value>
+        <value name="TripEndTime__c">19:00</value>
+        <value name="Receipts_Received__c"></value>
+        <value name="SAP_Trip_Number__c">NIL</value>
+        <value name="Digitalized_Paper_Receipt__c"></value>
+        <value name="SAP_Trip_Approval__c">Trip completed</value>
+        <value name="SAP_Trip_Settlement__c">To be settled</value>
+        <value name="Exported_by_IISExported_by_IIS__c">SUBMITTED</value>
+        <value name="AttachmentsURLEnvelope__c">&lt;a href="javascript:open_window(800,450,'http://oaattachmentsfs.eur.ad.sag:8087/oaattach.aspx?ID=417002-1385167&amp;TNR=403096','attachment')"&gt;Manage Attachments&lt;/a&gt;</value>
+        <value name="projectid"></value>
+        <value name="customerid"></value>
+        <value name="uploadAttachmentTRP__c"></value>
+        <value name="isSampled__c"></value>
+        <value name="isFCNAReq__c"></value>
+        <value name="SAGOfficeID__c"></value>
+        <value name="isPrinted__c"></value>
+      </record>
+    </array>
+    <value name="useJSSE">yes</value>
+    <value name="expenseid">417002</value>
+    <value name="encoding">UTF-8</value>
+  </record>
+</IDataXMLCoder>

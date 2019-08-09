@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<businessProcessDiagram xmlns="http://www.webmethods.com/bpm/2006/"
+  Id="7be96d10-7f4f-4e36-b151-62eb6e59154e" bpmnStyle="false" build="1"
+  canvasPool="1" creator="prja" description=""
+  failProcessOnStepFailure="false" focalRole="Focal role"
+  name="CMS_Process" packageName="CMS_Process" processCategory=""
+  rnSync="false" runtimeVersion="2" transitionLabelPref="expression"
+  unSynchJoinDeadPath="true" version="9.8.0">
+  <kpiDimensions/>
+  <systemKPIs>
+    <systemKPI Id="" description="" name="Volume" unitOfMeasure=""/>
+    <systemKPI Id="" description="" name="Cycle Time" unitOfMeasure=""/>
+    <systemKPI Id="" description="" name="Error Count" unitOfMeasure=""/>
+  </systemKPIs>
+  <logicalDataItem Id="" description="" dimension="0"
+    label="ProcessData" name="{ProcessNamespace}ProcessData" type="{pub.prt}ProcessData"/>
+  <logicalDataItem Id="" description="" dimension="0"
+    label="cmsEnvelope" name="{ProcessNamespace}cmsEnvelope" type="{Cms_Common.document.task}cmsEnvelope"/>
+  <timeout calendarAlias="" calendarTime="0:0:0"
+    dynamicCalendarStaticAlias="" dynamicCalendarStaticDays=""
+    dynamicCalendarStaticHours="" dynamicCalendarStaticMinutes=""
+    dynamicFieldName="" isCalendarTimeout="false" isStaticTimeout="true"
+    isXPathTimeout="false" pipelineCalendarAlias=""
+    pipelineCalendarDays="" pipelineCalendarHours=""
+    pipelineCalendarMinutes="" timeoutStyle="RELATIVE"
+    timeoutType="processTimeout" timeoutValue="0" xpathTimeoutValue=""/>
+  <pool Id="333ea427-76c1-4d09-9132-53a9e91b723d" blue="128"
+    containerType="LEGACY_WEBM_SUBPROCESS" external="false"
+    externalizeConditions="false" green="128" isCollapsed="false"
+    isCompensating="false" isTestAfter="false" label="CMS"
+    labelBlue="255" labelGreen="204" labelRed="153" logicalServer=""
+    loopMaximum="0" loopMaximumField="" name="4" orientation="vertical"
+    red="128" retryCount="0" stepLock="false" uid="P5" useCorrelation="false">
+    <documentation/>
+    <businessKPIs/>
+    <fontData boldFont="false" fontFamily="" italicFont="false"/>
+    <dataItem type="Unconfigured" uid="V147"/>
+    <dataItem type="Unconfigured" uid="V108"/>
+    <dataItem type="{Cms_Common.document.task}cmsEnvelope" uid="V105"/>
+    <dataItem type="Unconfigured" uid="V85"/>
+    <dataItem type="Unconfigured" uid="V115"/>
+    <receiveStep Id="665b669e-f5c1-421e-96f1-a98a293cd89c"
+      allowsSynchronousReply="false" edaEventQName="" edaSubFilter=""
+      edaSubFilterLang="" eventType="START"
+      externalizeConditions="false" height="35"
+      isStartStepServiceRequired="true" label="Start cmsEnvelope"
+      labelHeight="-1" labelWidth="-1" logicalServer="Default"
+      outputMessageType="{Cms_Common.document.task}cmsEnvelope"
+      receiveProtocol="SUBSCRIPTION" receiveType="EMPTY"
+      stepLock="false" uid="S29" useCorrelation="false" width="35"
+      x="37" y="76">
+      <documentation/>
+      <businessKPIs/>
+      <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+        <fontColor blue="0" green="0" red="0"/>
+      </fontData>
+      <output name="{ProcessNamespace}cmsEnvelope"/>
+      <extendedProperty name="retries" value="0"/>
+      <extendedProperty name="retryInterval" value="60000"/>
+      <wmExpressionFilter/>
+    </receiveStep>
+    <terminateStep Id="c688d511-8d9b-4814-a10a-28ef7d78e2a9"
+      escalateFailure="true" height="35" label="End Process"
+      labelHeight="-1" labelWidth="-1" logicalServer="Default"
+      stepLock="false" terminateStatus="DONE" uid="S120"
+      useCorrelation="false" width="35" x="667" y="76">
+      <documentation/>
+      <businessKPIs/>
+      <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+        <fontColor blue="0" green="0" red="0"/>
+      </fontData>
+      <extendedProperty name="retries" value="0"/>
+      <extendedProperty name="retryInterval" value="60000"/>
+    </terminateStep>
+    <invokeStep Id="14883fe8-01a6-4cb5-aef8-100d07f82080"
+      dynamicReferenceProcess="false" externalizeConditions="false"
+      height="53" invokeContainer="P/cms_process_task"
+      invokeId="C44DC91A-5FDD-CA21-08BA-894744742CAE" invokeLocation=""
+      invokeName="cms_task" invokeType="TASK" isCompensating="false"
+      isTestAfter="false" label="SAP Contract Creation" labelHeight="-1"
+      labelWidth="-1" logicalServer="Default" loopMaximum="0"
+      loopMaximumField="" retryCount="0" routingRuleSet=""
+      ruleType="WMRULE" stepLock="false" uid="S44"
+      useCorrelation="false" width="83" x="470" y="69">
+      <documentation/>
+      <businessKPIs/>
+      <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+        <fontColor blue="0" green="0" red="0"/>
+      </fontData>
+      <input name="{ProcessNamespace}cmsEnvelope"/>
+      <wmExpression/>
+      <output name="{ProcessNamespace}cmsEnvelope"/>
+      <extendedProperty name="retries" value="0"/>
+      <extendedProperty name="retryInterval" value="60000"/>
+      <timeout calendarAlias="" calendarTime="0:0:0"
+        dynamicCalendarStaticAlias="" dynamicCalendarStaticDays=""
+        dynamicCalendarStaticHours="" dynamicCalendarStaticMinutes=""
+        dynamicFieldName="" isCalendarTimeout="false"
+        isStaticTimeout="true" isXPathTimeout="false"
+        pipelineCalendarAlias="" pipelineCalendarDays=""
+        pipelineCalendarHours="" pipelineCalendarMinutes=""
+        timeoutStyle="RELATIVE" timeoutType="stepTimeout"
+        timeoutValue="0" xpathTimeoutValue=""/>
+    </invokeStep>
+    <invokeStep Id="ba02f9cb-67ae-433c-8fd1-4ac40aad5a65"
+      dynamicReferenceProcess="false" externalizeConditions="false"
+      height="53" invokeContainer="Cms_CaseDetails.operations.common"
+      invokeId="Cms_CaseDetails.operations.common:insertCustomIdForProcess"
+      invokeLocation="" invokeName="insertCustomIdForProcess"
+      invokeType="ISSERVICE" isCompensating="false" isTestAfter="false"
+      label="Log CustomId" labelHeight="-1" labelWidth="-1"
+      logicalServer="Default" loopMaximum="0" loopMaximumField=""
+      retryCount="0" routingRuleSet="" ruleType="WMRULE"
+      stepLock="false" uid="S93" useCorrelation="false" width="83"
+      x="224" y="69">
+      <documentation/>
+      <businessKPIs/>
+      <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+        <fontColor blue="0" green="0" red="0"/>
+      </fontData>
+      <input name="{ProcessNamespace}cmsEnvelope"/>
+      <input name="{ProcessNamespace}ProcessData"/>
+      <wmExpression/>
+      <output name="{ProcessNamespace}cmsEnvelope"/>
+      <extendedProperty name="retries" value="0"/>
+      <extendedProperty name="retryInterval" value="60000"/>
+      <timeout calendarAlias="" calendarTime="0:0:0"
+        dynamicCalendarStaticAlias="" dynamicCalendarStaticDays=""
+        dynamicCalendarStaticHours="" dynamicCalendarStaticMinutes=""
+        dynamicFieldName="" isCalendarTimeout="false"
+        isStaticTimeout="true" isXPathTimeout="false"
+        pipelineCalendarAlias="" pipelineCalendarDays=""
+        pipelineCalendarHours="" pipelineCalendarMinutes=""
+        timeoutStyle="RELATIVE" timeoutType="stepTimeout"
+        timeoutValue="0" xpathTimeoutValue=""/>
+    </invokeStep>
+    <invokeStep Id="0bda8bf8-d401-4dd0-bd51-cfa123bb4e5d"
+      dynamicReferenceProcess="false" externalizeConditions="false"
+      height="53" invokeContainer="Cms_CaseDetails.operations.common"
+      invokeId="Cms_CaseDetails.operations.common:mapContractActivationForProcess"
+      invokeLocation="" invokeName="mapContractActivationForProcess"
+      invokeType="ISSERVICE" isCompensating="false" isTestAfter="false"
+      label="Map Contract Activation" labelHeight="-1" labelWidth="-1"
+      logicalServer="Default" loopMaximum="0" loopMaximumField=""
+      retryCount="0" routingRuleSet="" ruleType="WMRULE"
+      stepLock="false" uid="S129" useCorrelation="false" width="83"
+      x="344" y="69">
+      <documentation/>
+      <businessKPIs/>
+      <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+        <fontColor blue="0" green="0" red="0"/>
+      </fontData>
+      <input name="{ProcessNamespace}cmsEnvelope"/>
+      <wmExpression/>
+      <output name="{ProcessNamespace}cmsEnvelope"/>
+      <extendedProperty name="retries" value="0"/>
+      <extendedProperty name="retryInterval" value="60000"/>
+      <timeout calendarAlias="" calendarTime="0:0:0"
+        dynamicCalendarStaticAlias="" dynamicCalendarStaticDays=""
+        dynamicCalendarStaticHours="" dynamicCalendarStaticMinutes=""
+        dynamicFieldName="" isCalendarTimeout="false"
+        isStaticTimeout="true" isXPathTimeout="false"
+        pipelineCalendarAlias="" pipelineCalendarDays=""
+        pipelineCalendarHours="" pipelineCalendarMinutes=""
+        timeoutStyle="RELATIVE" timeoutType="stepTimeout"
+        timeoutValue="0" xpathTimeoutValue=""/>
+    </invokeStep>
+    <transition Id="a92a9e84-3974-4d11-b1d6-42c78ab36c60" blue="255"
+      conditionDescription="" conditionText="" conditionType="IF"
+      green="0" lineShape="STRAIGHT" red="0" source="S29"
+      sourceLocation="-1,-1" sourceTerminal="RIGHT" target="S93"
+      targetLocation="-1,-1" targetTerminal="LEFT" uid="T96">
+      <bendpoint index="0" location="406,182" weight="0.5"/>
+      <bendpoint index="1" location="406,184" weight="0.5"/>
+      <labelLayout blue="0" defaultLocation="true" green="196"
+        height="-1" red="255" width="-1" x="145" y="94">
+        <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+          <fontColor blue="0" green="0" red="0"/>
+        </fontData>
+      </labelLayout>
+      <wmExpression/>
+    </transition>
+    <transition Id="d9b6894b-4f66-4833-a532-759674608aae" blue="255"
+      conditionDescription="" conditionText="" conditionType="IF"
+      green="0" lineShape="STRAIGHT" red="0" source="S93"
+      sourceLocation="-1,-1" sourceTerminal="RIGHT" target="S129"
+      targetLocation="-1,-1" targetTerminal="LEFT" uid="T133">
+      <bendpoint index="0" location="584,184" weight="0.5"/>
+      <bendpoint index="1" location="584,184" weight="0.5"/>
+      <labelLayout blue="0" defaultLocation="true" green="196"
+        height="-1" red="255" width="-1" x="323" y="94">
+        <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+          <fontColor blue="0" green="0" red="0"/>
+        </fontData>
+      </labelLayout>
+      <wmExpression/>
+    </transition>
+    <transition Id="cdad6132-c5b2-4d46-aa41-a02d5c949310" blue="255"
+      conditionDescription="" conditionText="" conditionType="IF"
+      green="0" lineShape="STRAIGHT" red="0" source="S129"
+      sourceLocation="-1,-1" sourceTerminal="RIGHT" target="S44"
+      targetLocation="-1,-1" targetTerminal="LEFT" uid="T134">
+      <bendpoint index="0" location="706,184" weight="0.5"/>
+      <bendpoint index="1" location="706,184" weight="0.5"/>
+      <labelLayout blue="0" defaultLocation="true" green="196"
+        height="-1" red="255" width="-1" x="446" y="94">
+        <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+          <fontColor blue="0" green="0" red="0"/>
+        </fontData>
+      </labelLayout>
+      <wmExpression/>
+    </transition>
+    <transition Id="f1c56d79-4bcc-484f-8a88-305621ac97c1" blue="255"
+      conditionDescription="" conditionText="" conditionType="IF"
+      green="0" lineShape="STRAIGHT" red="0" source="S44"
+      sourceLocation="-1,-1" sourceTerminal="RIGHT" target="S120"
+      targetLocation="-1,-1" targetTerminal="LEFT" uid="T148">
+      <bendpoint index="0" location="868,184" weight="0.5"/>
+      <bendpoint index="1" location="868,182" weight="0.5"/>
+      <labelLayout blue="0" defaultLocation="true" green="196"
+        height="-1" red="255" width="-1" x="606" y="94">
+        <fontData boldFont="false" fontFamily="Segoe UI" fontSize="9" italicFont="false">
+          <fontColor blue="0" green="0" red="0"/>
+        </fontData>
+      </labelLayout>
+      <wmExpression/>
+    </transition>
+    <timeout calendarAlias="" calendarTime="0:0:0"
+      dynamicCalendarStaticAlias="" dynamicCalendarStaticDays=""
+      dynamicCalendarStaticHours="" dynamicCalendarStaticMinutes=""
+      dynamicFieldName="" isCalendarTimeout="false"
+      isStaticTimeout="true" isXPathTimeout="false"
+      pipelineCalendarAlias="" pipelineCalendarDays=""
+      pipelineCalendarHours="" pipelineCalendarMinutes=""
+      timeoutStyle="RELATIVE" timeoutType="stepTimeout" timeoutValue="0" xpathTimeoutValue=""/>
+    <wmExpression/>
+    <swimlane Id="fc8fd8d3-0f4f-497f-8292-9735a19b441a" blue="204"
+      green="255" height="316" label="Case Owner" labelBlue="255"
+      labelGreen="238" labelRed="221" name="Case Owner" red="255"
+      uid="W62" width="183">
+      <documentation/>
+    </swimlane>
+    <swimlane Id="6fc984a9-530c-4046-b4c2-5803bfbfdcd2" blue="204"
+      green="255" height="316" label="SAP Contract Creator"
+      labelBlue="255" labelGreen="238" labelRed="221"
+      name="SAP Contract Creator" red="255" uid="W6" width="576">
+      <documentation/>
+    </swimlane>
+  </pool>
+  <pool Id="febb8c3a-91ec-416b-bf88-a41f6675d423" blue="128"
+    containerType="LEGACY_WEBM_SUBPROCESS" external="true"
+    externalizeConditions="false" green="128" isCollapsed="false"
+    isCompensating="false" isTestAfter="false" label="Pool"
+    labelBlue="255" labelGreen="204" labelRed="153" logicalServer=""
+    loopMaximum="0" loopMaximumField="" name="1"
+    orientation="horizontal" red="128" retryCount="0" stepLock="false"
+    uid="P2" useCorrelation="false">
+    <documentation/>
+    <businessKPIs/>
+    <fontData boldFont="false" fontFamily="" italicFont="false"/>
+    <poolReference Id="62d135ea-f344-48c7-97f1-ae59a450c573" label="CMS"
+      logicalServer="CMS Local VM" poolName="4" stepLock="false"
+      uid="S3" useCorrelation="false" x="258" y="59">
+      <documentation/>
+      <businessKPIs/>
+      <fontData boldFont="false" fontFamily="" italicFont="false"/>
+    </poolReference>
+    <timeout calendarAlias="" calendarTime="0:0:0"
+      dynamicCalendarStaticAlias="" dynamicCalendarStaticDays=""
+      dynamicCalendarStaticHours="" dynamicCalendarStaticMinutes=""
+      dynamicFieldName="" isCalendarTimeout="false"
+      isStaticTimeout="true" isXPathTimeout="false"
+      pipelineCalendarAlias="" pipelineCalendarDays=""
+      pipelineCalendarHours="" pipelineCalendarMinutes=""
+      timeoutStyle="RELATIVE" timeoutType="stepTimeout" timeoutValue="0" xpathTimeoutValue=""/>
+    <wmExpression/>
+  </pool>
+  <documentation/>
+  <qualityOfService expressPipeline="true" minLogLevel="5"
+    optimizeLocally="true" volatileTracking="false" volatileTransition="true"/>
+  <edaIntrinsics processEvent="false" stepEvent="false"/>
+  <easeOfOperations enableProcessForTrackingInTarget="false"
+    enableProcessInTarget="false" stepsEnabledForResubmitInTarget=""/>
+</businessProcessDiagram>
