@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NirvanaRealm name="umserver" exportDate="2019-08-12+05:30" comment="Realm configuration from umserver" version="10.3" buildInfo="10.3.0.0.112089">
+    <ChannelSet>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/192_168_233_1_5555_1562566736_J_jRQtEolDEurgAVIwwwADXaZQs__RequestReplyClient" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" MultiFileEventsPerSpindle="50000" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="addint" name="sgan"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/pradeep/testing" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" MultiFileEventsPerSpindle="50000" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="addint" name="sgan"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+    </ChannelSet>
+    <DataGroupSet/>
+</NirvanaRealm>
