@@ -6,5 +6,10 @@ pipeline {
         git(url: 'https://github.com/saigandi/hello-world.git', branch: 'master')
       }
     }
+    stage('') {
+      steps {
+        echo 'Hello World'
+      }
+    }
   }
 }
