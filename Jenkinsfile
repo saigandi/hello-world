@@ -2,17 +2,17 @@ pipeline{
   agent any
     stages{
       stage('Build'){
-          step{
+          steps{
             echo 'Hello this is my fist job'
           }
       }
       stage('Test'){
-          step{
+          steps{
             echo 'This is to perfom unit tests & regression'
           }
       }
       stage('Deploy'){
-          step{
+          steps{
             echo 'Deployment stages to deploy'
           }
       }
