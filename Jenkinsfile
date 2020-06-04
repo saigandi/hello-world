@@ -1,5 +1,5 @@
 pipeline{
-  agent any{
+  agent any
     stages{
       stage('Build'){
         echo 'Hello this is my fist job'
@@ -11,5 +11,4 @@ pipeline{
         echo 'Deployment stages to deploy'
       }
     }
-  }
 }
