@@ -1,13 +1,14 @@
-pipeline {
-  agent any
-  stages {
-    stage('Checkout') {
-      steps {
-        git(url: 'https://github.com/saigandi/hello-world.git', branch: 'master')
-        withAnt(installation: 'ANT_HOME', jdk: 'JAVA_HOME') {
-          echo 'Hello This is my fist pipeline job'
-        }
-
+pipeline{
+  agent any{
+    stages{
+      stage('Build'){
+        echo 'Hello this is my fist job'
+      }
+      stage('Test'){
+        echo 'This is to perfom unit tests & regression'
+      }
+      stage('Deploy'){
+        echo 'Deployment stages to deploy'
       }
     }
   }
