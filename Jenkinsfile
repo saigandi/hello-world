@@ -7,6 +7,7 @@ pipeline{
             withEnv( ["ANT_HOME=${tool antVersion}"] ) {
             bat '%ANT_HOME%/bin/ant.bat build'
             echo 'Hello this is my fist job'
+            echo "${ANT_HOME}"
           }
       }
     }
